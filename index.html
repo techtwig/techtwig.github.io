@@ -1,72 +1,161 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tech Twig</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,400;0,900;1,100;1,400;1,900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<style>
-		header {
-			background-color: #f2f2f2;
-			padding: 50px;
-			text-align: center;
+		* {
+			font-family: 'Libre Franklin', sans-serif;
+			margin: 0;
+			padding: 0;
 		}
-
-		header img {
-			width: 100%;
-			height: auto;
+		.material-symbols-outlined {
+			font-variation-settings:
+			'FILL' 0,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 24
+		}
+		.main-header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			padding: 50px 0;
+		}
+		#heading {
+			margin-top: 30px;
 			margin-bottom: 20px;
 		}
-
-		h1 {
-			color: #00549f;
-			font-family: Arial, sans-serif;
-			font-size: 48px;
-			margin-bottom: 10px;
+		#t1 {
+			color: #333;
 		}
-
-		p {
-			color: #555;
-			font-size: 20px;
-			line-height: 1.5;
+		#t2 {
+			color: #666;
 		}
-
-		#community-goal {
-			padding: 50px;
-			text-align: center;
-			background-color: #fff;
+		#t3 {
+			color: #888;
 		}
-
-		#community-goal h2 {
-			color: #00549f;
-			font-size: 36px;
-			margin-bottom: 20px;
+		.join-link {
+			text-decoration: none;
+			text-transform: uppercase;
+			padding: 10px 20px;
+			background: #f26426;
+			color: #fff;
+			border-radius: 20px;
 		}
-
-		#community-goal p {
-			color: #555;
-			font-size: 20px;
-			line-height: 1.5;
+		.objective-items {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
+			margin-bottom: 30px;
+			border: 1px dashed #afafaf;
 		}
-
+		.objective-items:hover {
+			background: #4f4f4f;
+			-webkit-transition: background-color 1000ms linear;
+			-ms-transition: background-color 1000ms linear;
+			transition: background-color 1000ms linear;
+		}
+		.objective-items:hover h3 {
+			color: #fff;
+		}
+		.objective-items h3 {
+			margin-left: 20px;
+			margin-bottom: 0px;
+		}
+		.objective-items-icon {
+			padding: 30px;
+			background: #efefef;
+		}
 	</style>
 </head>
 <body>
-	<header>
-		<img src="banner.jpg" alt="Cover Image">
-		<h1>Tech Twig</h1>
-		<p>A community platform for young software engineers to improve their skills and contribute to the community.</p>
-	</header>
-	<main>
-		<section id="community-goal">
-			<h2>Our Community Goal</h2>
-			<p>Our goal is to provide a platform for young software engineers to develop their skills, share their knowledge, and collaborate on open-source projects. We believe that by fostering a strong community of learners and contributors, we can create a more innovative and inclusive tech industry.</p>
-			<ol>
-				<li>Develop a mentorship program</li>
-				<li>Encourage open source contributions</li>
-				<li>Host hackathons and coding challenges</li>
-				<li>Provide educational resources</li>
-				<li>Organize networking events</li>
-			</ol>
-		</section>
-	</main>
-</body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 main-header">
+				<img src="assets/logo.png" alt="TechTwig">
+				<h1 id="heading">
+					<span id="t1">Learn</span>
+					<span id="t2">Contribute</span>
+					<span id="t3">Grow</span>
+				</h1>
+				<p>A community platform for a freshers or who wants to improve by learning and contributing.</p>
+				<a class="join-link mt-4" href="https://github.com/orgs/techtwig/discussions/2">Connect Now</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="objective-items">
+					<span class="material-symbols-outlined objective-items-icon">
+						terminal
+					</span>
+					<h3>Learn and Explore</h3>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="objective-items">
+					<span class="material-symbols-outlined objective-items-icon">
+						account_tree
+					</span>
+					<h3>Contribute and Grow</h3>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="objective-items">
+					<span class="material-symbols-outlined objective-items-icon">
+						check_circle
+					</span>			
+					<h3>Get Feedback from Expart</h3>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="objective-items">
+					<span class="material-symbols-outlined objective-items-icon">
+						hub
+					</span>
+					<h3>Connect with Mentors</h3>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: 60px; padding: 50px 0; background: #fff5dc">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+					<h1>Contribute and reflect what you learned</h1>
+					<a class="join-link mt-4" href="https://github.com/orgs/techtwig/discussions/2">Contribute Now</a>
+				</div>
+				<div class="col-md-6">
+					<img class="img-fluid" src="assets/contributes.png" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="padding: 50px 0; background: #fff0fd">
+		<div class="container" style="margin-top: 100px;">
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-fluid" src="assets/mentors.png" />
+				</div>
+				<div class="col-md-6 d-flex flex-column justify-content-center align-items-start">
+					<h1>Get mentors Feedback after a successful PR</h1>
+					<a class="join-link mt-4" href="https://github.com/orgs/techtwig/discussions/2">Contribute Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script></body> -->
 </html>
