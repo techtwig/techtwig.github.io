@@ -1,5 +1,5 @@
 # TechTwig
-![logo](./assets/logo.png)
+![logo](./assets/logo.jpg)
 
 ## About
 A community platform for a freshers or who wants to improve by learning and contributing.
